@@ -1,5 +1,5 @@
 # Tic Tac Toe
-Basic Tic Tac Toe game build with python.
+Simple Tic Tac Toe game build with python.
 
 ## Usage
 
@@ -8,5 +8,6 @@ Feel free to contribute.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
 
 
