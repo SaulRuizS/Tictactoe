@@ -1,5 +1,5 @@
 # Tic Tac Toe
-Simple Tic Tac Toe game.
+Simple Tic Tac Toe game build with Python.
 
 ## Usage
 Still in development...
@@ -9,6 +9,7 @@ Feel free to contribute.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
 
 
 
