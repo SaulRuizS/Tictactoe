@@ -1,5 +1,5 @@
 # Tic Tac Toe
-Simple Tic Tac Toe game build with Python.
+Tic Tac Toe game build with Pygame.
 
 ## Usage
 Still in development...
