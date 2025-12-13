@@ -32,17 +32,17 @@ while running:
 
     # RENDER YOUR GAME HERE
 
-    #LEFT GRID LINE
+    #TOP GRID LINE
     pygame.draw.line(screen, grid_color,(0+padding,0+padding), (SCREEN_WIDTH-padding, 0+padding), line_width)
 
     #RIGHT GRID LINE
-    pygame.draw.line(screen, grid_color,(0+padding,SCREEN_HEIGHT-padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
-
-    #TOP GRID LINE
-    pygame.draw.line(screen, grid_color,(0+padding,0+padding), (0+padding, SCREEN_HEIGHT-padding), line_width)
+    pygame.draw.line(screen, pygame.Color(255,0,255),(0+padding,0+padding), (0+padding, SCREEN_HEIGHT-padding), line_width)
 
     #BOTTOM GRID LINE
-    pygame.draw.line(screen, grid_color,(SCREEN_WIDTH-padding,SCREEN_WIDTH-padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
+    pygame.draw.line(screen, pygame.Color(0,255,255),(0+padding,SCREEN_HEIGHT-padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
+
+    #LEFT GRID LINE
+    pygame.draw.line(screen, pygame.Color(255,255,0),(SCREEN_WIDTH-padding,0+padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
 
     #LEFT GRID LINE
     #pygame.draw.rect(screen, grid_color, pygame.Rect((0+(padding)), (0+(padding)), line_width, line_length), 6)
