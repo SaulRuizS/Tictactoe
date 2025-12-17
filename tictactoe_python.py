@@ -19,6 +19,9 @@ padding = (SCREEN_HEIGHT * 0.2) - (line_width/2)
 #spaceOfLines = 50
 
 grid_color = pygame.Color(255,255,255)
+#pygame.Color(255,0,255)
+#pygame.Color(0,255,255)
+#pygame.Color(255,255,0)
 
 while running:
     # poll for events
@@ -36,13 +39,13 @@ while running:
     pygame.draw.line(screen, grid_color,(0+padding,0+padding), (SCREEN_WIDTH-padding, 0+padding), line_width)
 
     #RIGHT GRID LINE
-    pygame.draw.line(screen, pygame.Color(255,0,255),(0+padding,0+padding), (0+padding, SCREEN_HEIGHT-padding), line_width)
+    pygame.draw.line(screen, grid_color,(0+padding,0+padding), (0+padding, SCREEN_HEIGHT-padding), line_width)
 
     #BOTTOM GRID LINE
-    pygame.draw.line(screen, pygame.Color(0,255,255),(0+padding,SCREEN_HEIGHT-padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
+    pygame.draw.line(screen, grid_color,(0+padding,SCREEN_HEIGHT-padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
 
     #LEFT GRID LINE
-    pygame.draw.line(screen, pygame.Color(255,255,0),(SCREEN_WIDTH-padding,0+padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
+    pygame.draw.line(screen, grid_color,(SCREEN_WIDTH-padding,0+padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
 
     #LEFT GRID LINE
     #pygame.draw.rect(screen, grid_color, pygame.Rect((0+(padding)), (0+(padding)), line_width, line_length), 6)
