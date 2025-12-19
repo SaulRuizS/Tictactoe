@@ -23,6 +23,8 @@ grid_color = pygame.Color(255,255,255)
 #pygame.Color(0,255,255)
 #pygame.Color(255,255,0)
 
+grid = Grid(screen,grid_color,padding,SCREEN_WIDTH,SCREEN_HEIGHT,line_width)
+
 while running:
     # poll for events
     # pygame.QUIT event means the user clicked X to close your window
@@ -35,30 +37,7 @@ while running:
 
     # RENDER YOUR GAME HERE
 
-    #TOP GRID LINE
-    pygame.draw.line(screen, grid_color,(0+padding,0+padding), (SCREEN_WIDTH-padding, 0+padding), line_width)
-
-    #RIGHT GRID LINE
-    pygame.draw.line(screen, grid_color,(0+padding,0+padding), (0+padding, SCREEN_HEIGHT-padding), line_width)
-
-    #BOTTOM GRID LINE
-    pygame.draw.line(screen, grid_color,(0+padding,SCREEN_HEIGHT-padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
-
-    #LEFT GRID LINE
-    pygame.draw.line(screen, grid_color,(SCREEN_WIDTH-padding,0+padding), (SCREEN_WIDTH-padding, SCREEN_HEIGHT-padding), line_width)
-
-    #LEFT GRID LINE
-    #pygame.draw.rect(screen, grid_color, pygame.Rect((0+(padding)), (0+(padding)), line_width, line_length), 6)
-    
-    #RIGHT GRID LINE
-    #pygame.draw.rect(screen, grid_color, pygame.Rect((SCREEN_WIDTH-(padding)), (0+(padding)), line_width, line_length), 6)
-
-    #TOP GRID LINE
-    #pygame.draw.rect(screen, grid_color, pygame.Rect(( (SCREEN_HEIGHT/2) - (line_length/2) ), (0+(padding)), line_length, line_width), 6)
-    
-    #BOTTOM GRID LINE
-    #pygame.draw.rect(screen, grid_color, pygame.Rect(( (SCREEN_HEIGHT/2) - (line_length/2) ), (SCREEN_HEIGHT-(padding)), line_length, line_width), 6)
-
+    grid.Draw()
 
     # flip() the display to put your work on screen
     pygame.display.flip()
