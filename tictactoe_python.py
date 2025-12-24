@@ -18,7 +18,7 @@ padding = (SCREEN_HEIGHT * 0.2) - (line_width/2)
 #top_padding = 60
 #spaceOfLines = 50
 
-grid_color = pygame.Color(255,255,255)
+grid_color = pygame.Color(255,255,0)
 #pygame.Color(255,0,255)
 #pygame.Color(0,255,255)
 #pygame.Color(255,255,0)
