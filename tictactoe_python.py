@@ -13,7 +13,7 @@ running = True
 
 line_length = SCREEN_HEIGHT * 0.8
 line_width = 10
-padding = (SCREEN_HEIGHT * 0.2) - (line_width/2)
+padding = 300 #(SCREEN_HEIGHT * 0.2) - (line_width/2)
 #leftPadding = 240
 #top_padding = 60
 #spaceOfLines = 50
