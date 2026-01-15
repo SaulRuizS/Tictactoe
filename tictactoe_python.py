@@ -13,7 +13,8 @@ running = True
 
 line_length = SCREEN_HEIGHT * 0.8
 line_width = 10
-padding = 300 #(SCREEN_HEIGHT * 0.2) - (line_width/2)
+screen_padding = 100 #(SCREEN_HEIGHT * 0.2) - (line_width/2)
+line_padding = 270
 #leftPadding = 240
 #top_padding = 60
 #spaceOfLines = 50
@@ -23,7 +24,7 @@ grid_color = pygame.Color(255,255,0)
 #pygame.Color(0,255,255)
 #pygame.Color(255,255,0)
 
-grid = Grid(screen,grid_color,padding,SCREEN_WIDTH,SCREEN_HEIGHT,line_width)
+grid = Grid(screen,grid_color,screen_padding,line_padding,SCREEN_WIDTH,SCREEN_HEIGHT,line_width)
 
 while running:
     # poll for events
