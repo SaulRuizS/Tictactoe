@@ -19,7 +19,7 @@ line_padding = 270
 #top_padding = 60
 #spaceOfLines = 50
 
-grid_color = pygame.Color(255,255,0)
+grid_color = pygame.Color(0,200,255)
 #pygame.Color(255,0,255)
 #pygame.Color(0,255,255)
 #pygame.Color(255,255,0)
