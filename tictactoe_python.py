@@ -3,6 +3,7 @@
 import pygame
 from grid import Grid
 from cross import Cross
+from circle import Circle
 
 # pygame setup
 pygame.init()
@@ -20,13 +21,15 @@ line_padding = 270
 #top_padding = 60
 #spaceOfLines = 50
 
-grid_color = pygame.Color(0,200,255)
+grid_color = pygame.Color(0,255,255)
 cross_color = pygame.Color(255,0,255)
+circle_color = pygame.Color(255,255,0)
 #pygame.Color(0,255,255)
 #pygame.Color(255,255,0)
 
 grid = Grid(screen,grid_color,screen_padding,line_padding,SCREEN_WIDTH,SCREEN_HEIGHT,line_width)
 cross = Cross(screen,cross_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding,line_padding,line_width)
+circle = Circle(screen,circle_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding,line_padding,line_width)
 
 while running:
     # poll for events
@@ -43,6 +46,8 @@ while running:
     grid.Draw()
 
     cross.Draw()
+
+    circle.Draw()
 
     # flip() the display to put your work on screen
     pygame.display.flip()
