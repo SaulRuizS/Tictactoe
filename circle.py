@@ -24,15 +24,8 @@ class Circle:
         self.line_width = line_width
 
     def Draw(self):
-        line_1_start_pos_x = self.circle_padding
-        line_1_start_pos_y = self.circle_padding
-        line_1_end_pos_x = line_1_start_pos_x + self.circle_width
-        line_1_end_pos_y = line_1_start_pos_y + self.circle_width
-
-        line_2_start_pos_x = line_1_start_pos_x
-        line_2_start_pos_y = line_1_start_pos_y + self.circle_width
-        line_2_end_pos_x = line_1_end_pos_x 
-        line_2_end_pos_y = line_1_end_pos_y - self.circle_width
+        line_1_start_pos_x = self.line_padding - self.screen_padding #self.circle_padding
+        line_1_start_pos_y = self.line_padding - self.screen_padding #self.circle_padding
 
         #
         pygame.draw.circle(self.screen,self.color,(line_1_start_pos_x,line_1_start_pos_y),self.circle_padding,self.line_width)
