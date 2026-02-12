@@ -37,9 +37,9 @@ class Cross:
         line_1_end_pos_y = line_1_start_pos_y + self.cross_width
 
         line_2_start_pos_x = line_1_start_pos_x
-        line_2_start_pos_y = line_1_start_pos_y + (self.cross_width / 2)
+        line_2_start_pos_y = line_1_start_pos_y + self.cross_width
         line_2_end_pos_x = line_1_end_pos_x 
-        line_2_end_pos_y = line_1_end_pos_y - (self.cross_width / 2)
+        line_2_end_pos_y = line_1_end_pos_y - self.cross_width
 
         #First Line
         pygame.draw.line(self.screen,self.color,(line_1_start_pos_x,line_1_start_pos_y),(line_1_end_pos_x,line_1_end_pos_y),self.line_width)

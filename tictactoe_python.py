@@ -21,7 +21,7 @@ grid_line_padding = 270
 #top_padding = 60
 #spaceOfLines = 50
 circle_radius = ( ( (line_length / 3) - (line_width / 2) ) / 2 ) - (screen_padding * 0.2)
-cross_width = (line_length / 3) - (line_width / 2) - (screen_padding * 0.3)
+cross_width = (line_length / 3) - (line_width / 2) - (screen_padding * 0.7)
 
 grid_color = pygame.Color(0,255,255)
 cross_color = pygame.Color(255,0,255)
@@ -30,8 +30,10 @@ circle_color = pygame.Color(255,255,0)
 #pygame.Color(255,255,0)
 
 grid = Grid(screen,grid_color,screen_padding,grid_line_padding,SCREEN_WIDTH,SCREEN_HEIGHT,line_width)
+
 cross = Cross(screen,cross_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding,grid_line_padding,line_width,cross_width)
-circle = Circle(screen,circle_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding,grid_line_padding,circle_radius,line_width)
+
+circle = Circle(screen,circle_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding - 190,grid_line_padding,circle_radius,line_width)
 
 while running:
     # poll for events
