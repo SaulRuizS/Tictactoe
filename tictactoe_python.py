@@ -24,7 +24,7 @@ circle_radius = ( ( (line_length / 3) - (line_width / 2) ) / 2 ) - (screen_paddi
 cross_width = (line_length / 3) - (line_width / 2) - (screen_padding * 0.7)
 
 grid_color = pygame.Color(0,255,255)
-cross_color = pygame.Color(100,0,100)
+cross_color = pygame.Color(200,100,200)
 circle_color = pygame.Color(255,255,0)
 #pygame.Color(0,255,255)
 #pygame.Color(255,255,0)
