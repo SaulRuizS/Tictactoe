@@ -23,6 +23,8 @@ grid_line_padding = 270
 circle_radius = ( ( (line_length / 3) - (line_width / 2) ) / 2 ) - (screen_padding * 0.2)
 cross_width = (line_length / 3) - (line_width / 2) - (screen_padding * 0.7)
 
+circle_cell_padding = 190
+
 grid_color = pygame.Color(0,255,255)
 cross_color = pygame.Color(200,100,200)
 circle_color = pygame.Color(255,255,0)
@@ -33,7 +35,7 @@ grid = Grid(screen,grid_color,screen_padding,grid_line_padding,SCREEN_WIDTH,SCRE
 
 cross = Cross(screen,cross_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding,grid_line_padding,line_width,cross_width)
 
-circle = Circle(screen,circle_color,SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding - 190,grid_line_padding,circle_radius,line_width)
+circle = Circle(screen,circle_color,circle_radius,line_width)
 
 while running:
     # poll for events
@@ -51,7 +53,9 @@ while running:
 
     cross.Draw()
 
-    circle.Draw()
+    circle.Draw(SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding - circle_cell_padding,grid_line_padding)
+
+    circle.Draw(SCREEN_WIDTH,SCREEN_HEIGHT,screen_padding - (circle_cell_padding*2) ,grid_line_padding)
 
     # flip() the display to put your work on screen
     pygame.display.flip()
