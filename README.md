@@ -1,8 +1,8 @@
 # Tic Tac Toe
-Tic Tac Toe game build with Pygame.
+Tic Tac Toe game build with library Pygame.
 
 ## Usage
-Still in development...
+Still in development.
 
 ## Contributing
 Feel free to contribute.
