@@ -5,7 +5,7 @@ Tic Tac Toe game built with the Pygame library.
 TBD.
 
 ## Contributing
-Feel free to contribute in any form.
+Feel free to contribute in any way.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
