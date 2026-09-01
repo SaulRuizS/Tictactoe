@@ -2,7 +2,7 @@
 Tic Tac Toe game built with the Pygame library.
 
 ## Usage
-TBD.
+To be disclosured.
 
 ## Contributing
 Feel free to contribute as you please.
